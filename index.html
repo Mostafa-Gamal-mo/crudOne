@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, bootstrap">
+  <meta name="Route" content="Route">
+  <link rel="icon" href="img/loading.gif">
+  <title>CRUD/S</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body class=" bg-dark text-bg-primary">
+
+
+  <h1 class=" text-center">Products Managment System</h1>
+
+  <div class="w-75 m-auto py-md-5">
+
+    <div class=" form-group">
+      <label class="my-md-3" for="ProductNameInput">ProductName :</label>
+      <input type="text" class="form-control" id="ProductNameInput">
+    </div>
+
+    <div class=" form-group">
+      <label class="my-md-3" for="ProductPriceInput">ProductPrice :</label>
+      <input type="number" class="form-control" id="ProductPriceInput">
+    </div>
+
+    <div class=" form-group">
+      <label class="my-md-3" for="ProductCategoryInput">ProductCategory :</label>
+      <input type="text" class="form-control" id="ProductCategoryInput">
+    </div>
+
+    <div class=" form-group">
+      <label class="my-md-3" for="ProductDescInput">ProductDesc :</label>
+      <textarea  type="text" class="form-control" id="ProductDescInput"></textarea>
+    </div>
+
+    <button onclick="addProdct()" class="btn btn-outline-light my-md-4" id="addbtn">Add Proudect</button>
+    <input oninput="search(this.value)" type="text" class="form-control w-75 m-auto my-md-4" placeholder="Search..">
+
+    
+    <table class="table text-white">
+      <thead>
+        <td>Index</td>
+        <td>Proudect Name</td>
+        <td>Proudect Price</td>
+        <td>Proudect Category</td>
+        <td>Proudect Desc</td>
+        <td>Update</td>
+        <td>Delete</td>
+      </thead>
+      <tbody id="tableBody">
+
+      </tbody>
+    </table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
